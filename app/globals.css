@@ -6,6 +6,9 @@ body, html {
     scroll-snap-type:mandatory;
     scroll-snap-type: y mandatory;
     background-color: #e5e5f7;
+    margin: 0px;
+    padding: 0px;
+    scroll-padding: 0px;
   }
 .bg_pattern3{
     scroll-snap-align: start;

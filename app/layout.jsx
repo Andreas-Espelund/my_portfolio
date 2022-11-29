@@ -2,14 +2,12 @@
 import './globals.css'
 import Navbar from './Navbar'
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+import Fab from './Fab'
+
 export default function RootLayout({ children }) {
 
   const [visible, setVisible] = useState(false)
-  const btn_vis = "fixed bottom-0 right-0 m-4 p-4 bg-secondary rounded-full shadow-xl transition-all"
-  const btn_hid = "fixed bottom-0 right-0 m-4 p-4 bg-secondary rounded-full shadow-xl transition-all opacity-0"
-  
+
   useEffect(function onFirstMount() {
     window.addEventListener("scroll", () => {setVisible(window.scrollY<=2)})
   }, []);
@@ -27,9 +25,7 @@ export default function RootLayout({ children }) {
         <div>
           {children}
         </div>
-        <a id="goToTop" className={visible? btn_hid : btn_vis} href="#body">
-          <Image src="/arrow_up.svg" width="32" height="32" alt="arrow icon"/>
-        </a>
+        <Fab visible={visible}/>
       </body>
     </html>
   )
