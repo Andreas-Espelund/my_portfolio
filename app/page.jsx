@@ -46,7 +46,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="h-screen snap-x snap-mandatory border-2">
+    <div className="h-screen snap-x snap-proximity scroll-smooth border-2">
       <Navbar/>
       <section id="projects" className="bg_pattern1">
         <div className="flex flex-col w-fit gap-10 opacity-100 mt-20">

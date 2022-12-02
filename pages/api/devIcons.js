@@ -16,7 +16,7 @@ const dev_icons = {
     'Figma' : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
     'Webstorm' : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webstorm/webstorm-original.svg",
     'Google Cloud' : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
-    'Jetpack Compose' : "https://3.bp.blogspot.com/-VVp3WvJvl84/X0Vu6EjYqDI/AAAAAAAAPjU/ZOMKiUlgfg8ok8DY8Hc-ocOvGdB0z86AgCLcBGAsYHQ/s1600/jetpack%2Bcompose%2Bicon_RGB.png"
+    'Jetpack Compose' : "/jetpack_compose.svg"
   
   }
 
