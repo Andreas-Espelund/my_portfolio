@@ -1,18 +1,6 @@
-'use client'
+
 import './globals.css'
-import Navbar from './Navbar'
-import { useState, useEffect } from 'react'
-import Fab from './Fab'
-
 export default function RootLayout({ children }) {
-
-  const [visible, setVisible] = useState(false)
-
-  useEffect(function onFirstMount() {
-    window.addEventListener("scroll", () => {setVisible(window.scrollY<=2)})
-  }, []);
-
-
   return (
     <html lang="en" className="scroll-smooth">
       {/*
@@ -21,11 +9,9 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body id="body" className="min-h-screen w-full flex flex-col justify-start bg-zinc-200">
-        <Navbar/>
         <div>
           {children}
         </div>
-        <Fab visible={visible}/>
       </body>
     </html>
   )

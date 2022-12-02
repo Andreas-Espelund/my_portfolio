@@ -1,30 +1,9 @@
 import React from 'react'
+import { getAllProjects } from '../pages/api/projectData'
 import CardView from './CardView'
 export default function Projects() {
 
-    const projects = [
-        {
-            id : 0,
-            name: "Utepils",
-            description: "Lorem ipsum masse bs som ingen bryr seg om egt...",
-            url: "/utepils.png",
-            alt : "project screenshot"
-        },
-        {
-            id : 1,
-            name: "Jackbow Website",
-            description: "Lorem ipsum masse bs som ingen bryr seg om egt...",
-            url: "/jackbow.jpg",
-            alt : "project screenshot"
-        },
-        {
-            id : 2,
-            name: "Munchees - Web app",
-            description: "Lorem ipsum masse bs som ingen bryr seg om egt...",
-            url: "/munchees.png",
-            alt : "project screenshot"
-        },
-    ]
+    const projects = getAllProjects()
 
 
   return (

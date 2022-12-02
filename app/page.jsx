@@ -1,7 +1,18 @@
+'use client'
 import './globals.css'
 import Contact from './Contact'
 import Projects from './Projects'
+import Fab from './Fab'
+import { useState, useEffect } from 'react'
+import Navbar from './Navbar'
 export default function Home() {
+
+  const [visible, setVisible] = useState(false)
+
+  useEffect(function onFirstMount() {
+    window.addEventListener("scroll", () => {setVisible(window.scrollY<=2)})
+  }, []);
+
   
   const socials = [
     {
@@ -36,6 +47,7 @@ export default function Home() {
 
   return (
     <div className="h-screen snap-x snap-mandatory border-2">
+      <Navbar/>
       <section id="projects" className="bg_pattern1">
         <div className="flex flex-col w-fit gap-10 opacity-100 mt-20">
           <h1 className="text-4xl lg:text-6xl text-primary font-semibold">🧑‍💻 Recent projects</h1>
@@ -62,7 +74,7 @@ export default function Home() {
       </div>
       
       </section>
-
+      <Fab visible={visible} position="br" href="#body" image="/arrow_up.svg"/>
     </div>
   )
 }
