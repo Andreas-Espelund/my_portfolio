@@ -1,43 +1,33 @@
 'use client'
 import './globals.css'
-import Contact from './Contact'
-import Projects from './Projects'
-import Fab from './Fab'
+import { Contact, Projects, Navbar, Fab } from './components'
 import { useState, useEffect } from 'react'
-import Navbar from './Navbar'
 export default function Home() {
-
-  const [visible, setVisible] = useState(false)
-
-  useEffect(function onFirstMount() {
-    window.addEventListener("scroll", () => {setVisible(window.scrollY<=2)})
-  }, []);
-
-  
+ 
   const socials = [
     {
-      id : 0,
+      id : "linkedin",
       title : 'linkedIn',
       src : '/linkedin.png',
       url : 'https://www.linkedin.com/in/andreas-espelund/',
       alt : 'linkedin logo'
     },
     {
-      id : 1,
+      id : "github",
       title : 'GitHub',
       src : '/github.png',
       url : 'https://github.com/Andreas-Espelund',
       alt : 'github logo'
     },
     {
-      id : 2,
+      id : "mail",
       title : 'Mail',
       src : '/mail.svg',
       url : 'mailto:andreasesraf@gmail.com',
       alt : 'mail icon'
     },
     {
-      id : 3,
+      id : "phone",
       title : 'Phone',
       src : '/phone.svg',
       url : 'tel:004799125338',
@@ -45,15 +35,14 @@ export default function Home() {
     },
   ]
 
+  
   return (
-    <div className="h-screen snap-x snap-proximity scroll-smooth border-2">
-      <Navbar/>
+    <div className="relative min-h-screen snap-x snap-proximity scroll-smooth border-2">
       <section id="projects" className="bg_pattern1">
-        <div className="flex flex-col w-fit gap-10 opacity-100 mt-20">
+        <div className="flex flex-col w-fit gap-10 opacity-100 my-20">
           <h1 className="text-4xl lg:text-6xl text-primary font-semibold">🧑‍💻 Recent projects</h1>
           <Projects/>
         </div>
-      
       </section>
 
       <section id="about" className="bg_pattern2">
@@ -74,7 +63,7 @@ export default function Home() {
       </div>
       
       </section>
-      <Fab visible={visible} position="br" href="#body" image="/arrow_up.svg"/>
+      <Navbar/>
     </div>
   )
 }

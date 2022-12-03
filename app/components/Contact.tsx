@@ -1,7 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-export default function Contact({contact}) {
+type contactProps = {
+    id : string,
+    title : string,
+    src : string,
+    url : string,
+    alt : string,
+}
+  
+export default function Contact({contact}: { contact : contactProps}) {
   return (
     <div id={contact.id} className="hover:scale-105 transition-all">
       <Link className="text-lg font-semibold text-center" href={contact.url} target="_blank">

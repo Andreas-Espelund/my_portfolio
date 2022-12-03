@@ -1,9 +1,11 @@
 import React from 'react'
-import Fab from '../Fab'
+import { Fab } from '../components'
 import Link from 'next/link'
 import Image from 'next/image'
 import { getIcon } from '../../pages/api/devIcons'
 import { getProjectById } from '../../pages/api/projectData'
+import Technologies from '../components/Technologies'
+import TypeChip from '../components/TypeChip'
 export default function page({params}) {
   
   const project = getProjectById(params.project_id)
@@ -11,20 +13,16 @@ export default function page({params}) {
   return (
     <div className="h-screen flex flex-col items-center w-full lg:w-1/2 m-auto p-10 gap-10">
         <div className="relative h-1/2 w-full">
-          <Image src={project.src} fill className="object-cover rounded-2xl shadow-lg"/>
+          <Image src={project.src} fill className="object-cover rounded-2xl shadow-lg" alt={''}/>
           <div className="absolute top-0 left-0 translate-y-10 -translate-x-12 flex">
-            <Fab image="/arrow_left.svg" href="/"/>
+            <Fab image="/arrow_left.svg" href="/" visible={undefined} position={undefined}/>
+          </div>
+          <div className='absolute top-0 right-0 p-4'>
+            <TypeChip type={project.type} size="large"/>
           </div>
         </div>
       
-      <div className="flex gap-4 h-20 w-full">
-        {project.tech.map((t) =>
-          <div className="text-transparent text-center hover:scale-105 hover:text-primary transition-all font-semibold">
-            <Image src={getIcon(t)} width={64} height={64} className="h-full"/>
-            <p className="fixed w-max">{t}</p>
-          </div>
-          )}
-      </div>
+        <Technologies items={project.tech} small={false}/>
       <div className="w-full flex flex-col gap-6">
         <div className="flex flex-wrap gap-4 justify-between items-end ">
           <h1 className="text-4xl lg:text-6xl text-primary font-semibold">{project.name}</h1>

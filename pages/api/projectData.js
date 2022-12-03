@@ -6,41 +6,49 @@ const projects = [
         id : "project_1",
         name: "Utepils",
         description: placeholder_description,
+        oneliner : 'Beer based on the weather',
         src: "/utepils.png",
+        type : 'android',
         alt : "project screenshot",
         github_url : 'https://github.com/Andreas-Espelund/Utepils',
         page_url : null,
-        tech : ['Kotlin','Android studio', 'Jetpack Compose','Figma','Google Cloud',]
+        tech : ['Kotlin','Android studio', 'Jetpack Compose','Figma','Google Cloud', 'Jira']
     },
     {
         id : "jackbow_website",
-        name: "Jackbow Website",
+        name: "Jackbow",
         description: placeholder_description,
+        oneliner : 'Landing page for a band',
         src: "/jackbow.jpg",
+        type : 'web',
         alt : "project screenshot",
         github_url : 'https://github.com/Andreas-Espelund/jackbow-website',
         page_url : 'https://www.jackbowband.com/',
-        tech : ['React','Javascript', 'Css','Tailwind','Html',]
+        tech : ['React','Javascript', 'Typescript', 'Css','Next','Tailwind','Html', 'Vscode']
     },
     {
-        id : "project_3",
+        id : "munchees",
         name: "Munchees",
         description: placeholder_description,
+        oneliner : 'Random meal generator',
         src: "/munchees.png",
+        type : 'web',
         alt : "project screenshot",
         github_url : 'https://github.com/Andreas-Espelund/munchees',
         page_url : 'munchees.vercel.app',
-        tech : ['Kotlin','Android studio', 'Jetpack Compose','Figma','Google Cloud',]
+        tech : ['React','Javascript', 'Css', 'Node','Html', 'Webstorm']
     },
     {
         id : "todo_list",
         name: "Todo list",
         description: placeholder_description,
+        oneliner : 'Remember?',
         src: "/todolist.jpg",
+        type : 'web',
         alt : "project screenshot",
         github_url : 'https://github.com/Andreas-Espelund/todo-list',
         page_url : 'do-list-psi-lac.vercel.app',
-        tech : ['Javascript','React', 'Firebase','Tailwind','Html','Css']
+        tech : ['Javascript','React', 'Firebase', 'Next','Tailwind','Html','Css', 'Webstorm']
     },
 ]
 

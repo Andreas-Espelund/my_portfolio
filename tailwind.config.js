@@ -12,7 +12,9 @@ module.exports = {
       colors: {
       'primary' : '#7077fd',
       'neutral' : '#e5e5f7',
-      'secondary' : '#FDF670'
+      'secondary' : '#FDF670',
+      'android' : "#3ddc84",
+      'web' : "#1982FC",
       },
       dropShadow : {
         'secondary': '0 35px 35px secondary',
