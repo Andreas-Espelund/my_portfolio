@@ -10,45 +10,42 @@ body, html {
     padding: 0px;
     scroll-padding: 0px;
   }
-.bg_pattern3{
-    scroll-snap-align: start;
-    width: 100%;
-    padding: 1rem;
-    min-height: 100vh;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e5e5f7;
-    background-image:  radial-gradient(#444cf7 1.05px, transparent 1.05px), radial-gradient(#444cf7 1.05px, #e5e5f7 1.05px);
-    background-size: 42px 42px;
-    background-position: 0 0,21px 21px;  
-}
-
-.bg_pattern1{
-    scroll-snap-align: start;
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid red;
-    min-height: 100vh;
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e5e5f7;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #444df71f, #444df71c);
-}
-
-.bg_pattern2{
-    scroll-snap-align: start;
-    width: 100%;
-    padding: 1rem;
-    min-height: 100vh;
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e5e5f7;
-    background: url('../public/wave.svg');
-    background-repeat: no-repeat;
-}
+  
+  .bg_pattern1{
+      scroll-snap-align: start;
+      width: 100%;
+      padding: 1rem;
+      min-height: 100vh;
+      height: max-content;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #444df71f, #444df71c);
+    }
+    
+    .bg_pattern2{
+        scroll-snap-align: start;
+        width: 100%;
+        padding: 1rem;
+        min-height: 100vh;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('../public/wave.svg');
+        background-repeat: no-repeat;
+    }
+    .bg_pattern3{
+        scroll-snap-align: start;
+        width: 100%;
+        padding: 1rem;
+        min-height: 100vh;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image:  radial-gradient(#444cf7 1.05px, transparent 1.05px), radial-gradient(#444cf7 1.05px, #e5e5f7 1.05px);
+        background-size: 42px 42px;
+        background-position: 0 0,21px 21px;  
+    }

@@ -5,7 +5,7 @@ import Technologies from './Technologies'
 import TypeChip from './TypeChip'
 export default function CardView({project}) {
   return (
-    <div id={project.id} className="flex flex-col gap-4 bg-white rounded-2xl lg:w-96 overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl hover:cursor-pointer transition-all">
+    <div id={project.id} className="flex flex-col gap-4 bg-white rounded-2xl w-full lg:w-96 overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl hover:cursor-pointer transition-all">
         <Link href={project.id} className="h-full">
           <div className="relative h-60">
             <Image src={project.src} fill className="shadow-md object-cover" alt={project.alt}/>

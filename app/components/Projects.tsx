@@ -7,7 +7,7 @@ export default function Projects() {
 
 
   return (
-    <div className="flex gap-10 flex-wrap">
+    <div className="flex flex-col lg:flex-row w-full gap-10 flex-wrap">
         {projects.map((e) => <CardView project={e}/>)}
     </div>
   )

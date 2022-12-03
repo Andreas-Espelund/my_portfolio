@@ -18,6 +18,9 @@ module.exports = {
       },
       dropShadow : {
         'secondary': '0 35px 35px secondary',
+      },
+      minHeight: {
+        '1/2': '50%',
       }
       
     },

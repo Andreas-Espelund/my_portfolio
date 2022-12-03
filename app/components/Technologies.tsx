@@ -5,12 +5,12 @@ export default function Technologies({items, small}) {
     const size =  small ?  24 : 64 
 
     return (
-    <div className="flex gap-4  w-full">
-        {items.sort().map((t: string) =>
-          <div className="text-transparent flex flex-col items-center hover:scale-105 hover:text-primary transition-all font-semibold">
-            <Image src={getIcon(t)} width={size} height={size} className="h-full" alt={''}/>
-            <p hidden={small} className="w-14">{t}</p>
+    <div className="flex gap-4 w-full">
+        {items.map((t: string) =>
+          <div className="relative w-8 h-8 lg:w-14 lg:h-14">
+              <Image src={getIcon(t)} fill alt={''}/>
           </div>
+          
           )}
       </div>
   )

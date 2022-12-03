@@ -11,10 +11,10 @@ export default function page({params}) {
   const project = getProjectById(params.project_id)
 
   return (
-    <div className="h-screen flex flex-col items-center w-full lg:w-1/2 m-auto p-10 gap-10">
-        <div className="relative h-1/2 w-full">
-          <Image src={project.src} fill className="object-cover rounded-2xl shadow-lg" alt={''}/>
-          <div className="absolute top-0 left-0 translate-y-10 -translate-x-12 flex">
+    <div className="h-screen flex flex-col items-center w-full lg:w-1/2 m-auto lg:p-4 gap-10">
+        <div className="relative min-h-1/2 w-full">
+          <Image src={project.src} fill className="object-cover lg:rounded-2xl shadow-lg" alt={''}/>
+          <div className="absolute top-0 left-0  lg:translate-y-10 lg:-translate-x-12 flex">
             <Fab image="/arrow_left.svg" href="/" visible={undefined} position={undefined}/>
           </div>
           <div className='absolute top-0 right-0 p-4'>
@@ -22,8 +22,9 @@ export default function page({params}) {
           </div>
         </div>
       
-        <Technologies items={project.tech} small={false}/>
-      <div className="w-full flex flex-col gap-6">
+        
+      <div className="w-full flex flex-col gap-6 p-4 lg:p-0">
+        <Technologies small={false} items={project.tech}/>
         <div className="flex flex-wrap gap-4 justify-between items-end ">
           <h1 className="text-4xl lg:text-6xl text-primary font-semibold">{project.name}</h1>
           <div className="flex gap-4">

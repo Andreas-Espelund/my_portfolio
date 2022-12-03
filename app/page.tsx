@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen snap-x snap-proximity scroll-smooth border-2">
       <section id="projects" className="bg_pattern1">
-        <div className="flex flex-col w-fit gap-10 opacity-100 my-20">
+        <div className="flex flex-col w-full lg:w-fit gap-10 opacity-100 my-20">
           <h1 className="text-4xl lg:text-6xl text-primary font-semibold">🧑‍💻 Recent projects</h1>
           <Projects/>
         </div>

@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body id="body" className="min-h-screen w-full flex flex-col justify-start bg-zinc-200">
+      <body id="body" className="min-h-screen w-full flex flex-col justify-start bg-neutral">
         <div>
           {children}
         </div>

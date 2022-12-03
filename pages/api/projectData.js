@@ -35,7 +35,7 @@ const projects = [
         type : 'web',
         alt : "project screenshot",
         github_url : 'https://github.com/Andreas-Espelund/munchees',
-        page_url : 'munchees.vercel.app',
+        page_url : 'https://munchees.vercel.app/',
         tech : ['React','Javascript', 'Css', 'Node','Html', 'Webstorm']
     },
     {
