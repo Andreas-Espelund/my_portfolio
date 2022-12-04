@@ -13,7 +13,7 @@ const projects = [
         github_url : 'https://github.com/Andreas-Espelund/Utepils',
         page_url : null,
         tech : ['Kotlin','Android studio', 'Jetpack Compose','Figma','Google Cloud', 'Jira'],
-        lessons: ['Android developement', 'Jetpack compose', 'Using design patterns']
+        lessons: ['Android developement', 'Jetpack compose', 'Using design patterns', 'Unit & integration-testing']
     },
     {
         id : "jackbow_website",

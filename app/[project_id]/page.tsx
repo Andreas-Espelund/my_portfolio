@@ -53,8 +53,8 @@ export default function page({params}) {
 
         </div>
         <h2 className='text-2xl lg:text-4xl font-semibold text-primary'>What i learned</h2>
-        <ul className='px-12 list-disc font-semibold text-lg text-primary'>
-          {project.lessons.map((t)=><li><p className='text-black pb-2'>{t}</p></li>)}
+        <ul className='list-disc list-inside w-full font-semibold text-lg '>
+          {project.lessons.map((t)=><li>{t}</li>)}
         </ul>
         <h2 className='text-2xl lg:text-4xl font-semibold text-primary'>Details</h2>
         <p className="text-lg pb-14">{project.description}</p>
