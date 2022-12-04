@@ -12,19 +12,21 @@ const projects = [
         alt : "project screenshot",
         github_url : 'https://github.com/Andreas-Espelund/Utepils',
         page_url : null,
-        tech : ['Kotlin','Android studio', 'Jetpack Compose','Figma','Google Cloud', 'Jira']
+        tech : ['Kotlin','Android studio', 'Jetpack Compose','Figma','Google Cloud', 'Jira'],
+        lessons: ['Android developement', 'Jetpack compose', 'Using design patterns']
     },
     {
         id : "jackbow_website",
         name: "Jackbow",
         description: placeholder_description,
         oneliner : 'Landing page for a band',
-        src: "/jackbow.jpg",
+        src: "/jackbow.jpeg",
         type : 'web',
         alt : "project screenshot",
         github_url : 'https://github.com/Andreas-Espelund/jackbow-website',
         page_url : 'https://www.jackbowband.com/',
-        tech : ['React','Javascript', 'Typescript', 'Css','Next','Tailwind','Html', 'Vscode']
+        tech : ['React','Javascript', 'Typescript', 'Css','Next','Tailwind','Html', 'Vscode'],
+        lessons: ['Page navigation', 'Making forms', 'Styling with tailwind CSS', 'Next.js']
     },
     {
         id : "munchees",
@@ -36,7 +38,8 @@ const projects = [
         alt : "project screenshot",
         github_url : 'https://github.com/Andreas-Espelund/munchees',
         page_url : 'https://munchees.vercel.app/',
-        tech : ['React','Javascript', 'Css', 'Node','Html', 'Webstorm']
+        tech : ['React','Javascript', 'Css', 'Node','Html', 'Webstorm'],
+        lessons: ['Fetching from API in javascript', 'Simple styling with css', 'Publishing a webpage']
     },
     {
         id : "todo_list",
@@ -48,7 +51,8 @@ const projects = [
         alt : "project screenshot",
         github_url : 'https://github.com/Andreas-Espelund/todo-list',
         page_url : 'do-list-psi-lac.vercel.app',
-        tech : ['Javascript','React', 'Firebase', 'Next','Tailwind','Html','Css', 'Webstorm']
+        tech : ['Javascript','React', 'Firebase', 'Next','Tailwind','Html','Css', 'Webstorm'],
+        lessons: ['Using firebase for authentication', 'Persistent storage with firestore', 'More advanced API usage']
     },
 ]
 
