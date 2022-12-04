@@ -11,10 +11,10 @@ export default function page({params}) {
   const project = getProjectById(params.project_id)
 
   return (
-    <div className="h-screen flex flex-col items-center w-full lg:w-1/2 m-auto lg:p-4 gap-10">
+    <div className="relative h-screen flex flex-col items-center w-full lg:w-1/2 m-auto lg:p-4 gap-10">
         <div className="relative min-h-1/2 w-full">
           <Image src={project.src} fill className="object-cover lg:rounded-2xl shadow-lg" alt={''}/>
-          <div className="absolute top-0 left-0  lg:translate-y-10 lg:-translate-x-12 flex">
+          <div className="absolute top-0 left-0 hidden lg:flex  lg:translate-y-10 lg:-translate-x-12">
             <Fab image="/arrow_left.svg" href="/" visible={undefined} position={undefined}/>
           </div>
           <div className='absolute top-0 right-0 p-4'>
@@ -58,6 +58,10 @@ export default function page({params}) {
         </ul>
         <h2 className='text-2xl lg:text-4xl font-semibold text-primary'>Details</h2>
         <p className="text-lg pb-14">{project.description}</p>
+      </div>
+      
+      <div className="fixed top-0 left-0 flex lg:hidden">
+        <Fab image="/arrow_left.svg" href="/" visible={undefined} position={undefined}/>
       </div>
       
     </div>
