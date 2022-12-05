@@ -44,7 +44,11 @@ export default function page({params}) {
           {project.lessons.map((t)=><li>{t}</li>)}
         </ul>
         <h2 className='text-2xl lg:text-4xl font-semibold text-primary'>Details</h2>
-        <p className="text-lg pb-14">{project.description}</p>
+        
+        <div className='flex flex-col gap-4 pb-14'>
+            {project.description.map((d)=> <p className="text-lg">{d}</p>)}
+        </div>
+      
       </div>
       
       <div className="fixed top-0 left-0 flex lg:hidden">
