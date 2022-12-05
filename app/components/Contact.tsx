@@ -12,11 +12,11 @@ type contactProps = {
 export default function Contact({contact}: { contact : contactProps}) {
   return (
     <div id={contact.id} className="hover:scale-105 transition-all">
-      <Link className="text-lg font-semibold text-center" href={contact.url} target="_blank">
-            <div className="flex flex-col text-white gap-4 justify-center items-center ">
-                <Image src={contact.src} height="128" width="128" alt={contact.alt} className="brightness-0 invert"/>
-                <h2>{contact.title}</h2>
+      <Link className="text-2xl  font-semibold text-center flex lg:flex-col justify-between items-center gap-10 lg:gap-4 text-white" href={contact.url} target="_blank">
+            <div className="relative w-20 h-20 ">
+                <Image src={contact.src} fill alt={contact.alt} className="brightness-0 invert"/>
             </div>
+            <h2>{contact.title}</h2>
         </Link>
     </div>
   )

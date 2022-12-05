@@ -55,10 +55,12 @@ export default function Home() {
       </section>
 
       <section id="contact" className="bg_pattern3">
-      <div className="flex flex-col w-fit gap-10">
+      <div className="flex flex-col w-full gap-10 lg:w-fit">
         <h1 className="text-4xl lg:text-6xl text-primary font-semibold">🚀 Get in touch</h1>
-        <div className="flex flex-wrap gap-10 lg:gap-24 bg-primary w-fit p-4 lg:p-10 m-auto rounded-2xl shadow-lg">
-          {socials.map((e) => <Contact contact={e}/>)}
+        <div className="w-full bg-primary lg:w-fit p-10 m-auto rounded-2xl shadow-lg">
+          <div className='flex flex-col lg:flex-row gap-10 lg:gap-20  w-fit m-auto'>
+            {socials.map((e) => <Contact contact={e}/>)}
+          </div>
         </div>
       </div>
       
