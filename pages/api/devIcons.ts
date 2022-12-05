@@ -19,7 +19,8 @@ const dev_icons = {
     'Jetpack Compose' : "/jetpack_compose.svg",
     'Next' : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     'Jira' : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
-    'Node' : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+    'Node' : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    'Fleet' : 'https://www.jetbrains.com/_assets/www/fleet/inc/overview-content/img/fleet-logo.65f4a04c59fc3ba93bb5e181050891c5.png'
 
 
   

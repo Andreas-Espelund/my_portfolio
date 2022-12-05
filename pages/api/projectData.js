@@ -51,7 +51,7 @@ const projects = [
         alt : "project screenshot",
         github_url : 'https://github.com/Andreas-Espelund/todo-list',
         page_url : 'do-list-psi-lac.vercel.app',
-        tech : ['Javascript','React', 'Firebase', 'Next','Tailwind','Html','Css', 'Webstorm'],
+        tech : ['Javascript','React', 'Firebase', 'Next','Tailwind','Html','Css', 'Fleet'],
         lessons: ['Using firebase for authentication', 'Persistent storage with firestore', 'More advanced API usage']
     },
 ]
