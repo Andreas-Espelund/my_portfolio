@@ -1,5 +1,7 @@
+'use client'
 import './globals.css'
 import { Contact, Projects, Navbar, Fab } from './components'
+import { useEffect } from 'react'
 import get_socials from '../pages/api/contacts'
 export default function Home() {
  
@@ -7,9 +9,9 @@ export default function Home() {
 
   
   return (
-    <div className="relative min-h-screen scroll-smooth">
+    <div className="relative min-h-screen">
       <section id="projects" className="bg_pattern1">
-        <div className="flex flex-col w-full lg:w-fit gap-10 opacity-100 my-20">
+        <div className="flex flex-col w-full lg:w-fit gap-10 opacity-100 mt-24 lg:mt-0">
           <h1 className="text-4xl lg:text-6xl text-primary font-semibold">🧑‍💻 Recent projects</h1>
           <Projects/>
         </div>
@@ -35,7 +37,7 @@ export default function Home() {
       </div>
       
       </section>
-      <Navbar/>
+      <Navbar id='navbar'/>
     </div>
   )
 }
