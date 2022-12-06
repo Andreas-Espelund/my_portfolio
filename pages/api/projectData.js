@@ -26,7 +26,7 @@ const projects = [
             "This project was primarily about learning firebase to make more advanced web apps with persistent storage. I also used firebase for authentication, such that users can create an account and log in anywhere. I used firestore as the database wich was a more simple way of posting and fetching data to and from the database. In this project i also tried tailwind for the first time wich made the process of building the UI much faster. To build and deploy the page i used next.js and vercels hosting platform."
         ],
         oneliner : 'Remember?',
-        src: "/todolist.jpg",
+        src: "/todos.png",
         type : 'web',
         alt : "project screenshot",
         github_url : 'https://github.com/Andreas-Espelund/todo-list',
