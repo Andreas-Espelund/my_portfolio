@@ -27,7 +27,7 @@ export default function Home() {
       </section>
 
       <section id="contact" className="bg_pattern3">
-      <div className="flex flex-col w-full gap-10 lg:w-fit">
+      <div className="flex flex-col w-full gap-10 lg:w-fit mt-24 lg:mt-0">
         <h1 className="text-4xl lg:text-6xl text-primary font-semibold">🚀 Get in touch</h1>
         <div className="w-full bg-primary lg:w-fit p-10 m-auto rounded-2xl shadow-lg">
           <div className='flex flex-col lg:flex-row gap-10 lg:gap-20  w-fit m-auto'>
