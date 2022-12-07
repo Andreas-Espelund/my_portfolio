@@ -6,9 +6,15 @@ import LargeBtn from '../components/LargeBtn'
 import { getProjectById } from '../../pages/api/projectData'
 import Technologies from '../components/Technologies'
 import TypeChip from '../components/TypeChip'
-export default function page({params}) {
-  
+
+
+export async function getStaticProps({ params }) {
+  // Pass post data to the page via props
   const project = getProjectById(params.project_id)
+  return { props: { project }
+}
+
+export default function page({params}) {
 
   return (
     <div className="relative h-screen flex flex-col items-center w-full lg:w-1/2 m-auto lg:p-4 gap-10">
