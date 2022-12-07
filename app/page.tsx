@@ -8,11 +8,7 @@ export default function Home() {
  
   const socials = get_socials()
 
-  
-  const handleClick = () => {
-    const clippy = document.getElementById("clippy")
-    clippy.style.transform = "translate(300px,300px)"
-  }
+
 
   
   return (
@@ -27,10 +23,10 @@ export default function Home() {
       <section id="about" className="bg_pattern2">
         <div className="flex flex-col w-full lg:w-1/2 gap-10 lg:mt-24">
           <h1 className="text-4xl lg:text-6xl text-primary font-semibold">👋 Hello there!</h1>
-          <p className="text-2xl">
+          <p className="text-xl lg:text-2xl">
           My name is Andreas Espelund, and I am a computer science student currently pursuing a Bachelor's degree in Computer Science at UiO. I have a strong passion for technology and computer programming, and I am always looking for ways to expand my knowledge and skills in the field. In my current studies, I am focusing on learning new skills, and I am eager to apply my knowledge and expertise to real-world problems.
           </p>
-          <p className='text-2xl'>
+          <p className='text-lg lg:text-2xl'>
           In the future, I hope to work as a software developer, where I can use my technical skills to create innovative solutions for a variety of industries. In my free time, I enjoy staying up-to-date on the latest advancements in technology, as well as participating in coding competitions.
           </p>
         </div>
@@ -48,9 +44,6 @@ export default function Home() {
       
       </section>
       <Navbar id='navbar'/>
-      <div onClick={handleClick} id="clippy" className='hover:cursor-pointer translate-x-5 hover:scale-110 fixed bottom-0 right-0 w-80 h-80 drop-shadow-2xl transition-all duration-1000'>
-        <Image fill src='/clippy.png' alt='clippy'/>
-      </div>
     </div>
   )
 }
