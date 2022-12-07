@@ -7,7 +7,7 @@ export default function Technologies({items, small}) {
     return (
     <div className="flex gap-4 w-full">
         {items.map((t: string) =>
-        <div className={`${cls} text-transparent font-semibold hover:text-primary transition-all`}>
+        <div className={`${cls} text-transparent font-semibold hover:text-inherit transition-all`}>
             <Image src={getIcon(t)} fill alt={''}/>
             <p className={txt}>{t}</p>
         </div>
