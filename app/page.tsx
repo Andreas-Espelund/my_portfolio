@@ -21,7 +21,7 @@ export default function Home() {
         <div className="flex flex-col w-full lg:w-1/2 gap-10">
           <h1 className="text-4xl lg:text-6xl text-primary font-semibold">👋 Hello!</h1>
           <p className="text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ex in magna aliquet ullamcorper vitae ac dolor. Etiam ac bibendum nisi. Aliquam ac eleifend lectus. Nunc viverra ex leo, vitae lacinia magna malesuada vitae. Cras et gravida metus. Sed ut neque libero. Fusce metus sapien, consequat in augue ut, mollis gravida mauris. Maecenas et sollicitudin diam. Vivamus arcu velit, pellentesque at nisl at, luctus dignissim augue. Donec luctus libero hendrerit, dignissim mi eget, vestibulum odio. Cras cursus mattis commodo. Morbi fermentum massa eu metus interdum maximus.
+          Hi there! My name is Andreas Espelund, and I am a computer science student currently pursuing a Bachelor's degree in Computer Science at UiO. I have a strong passion for technology and computer programming, and I am always looking for ways to expand my knowledge and skills in the field. In my current studies, I am focusing on learning new skills, and I am eager to apply my knowledge and expertise to real-world problems. In the future, I hope to work as a software developer, where I can use my technical skills to create innovative solutions for a variety of industries. In my free time, I enjoy staying up-to-date on the latest advancements in technology, as well as participating in coding competitions.
           </p>
         </div>
       </section>
