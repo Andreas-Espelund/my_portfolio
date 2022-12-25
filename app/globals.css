@@ -2,11 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    
+    --primary-color-faded: #0b396611; /* Primary color with pacity around 20% */
+    --primary-color-faded2: #0b396638; /* Primary color with pacity around 20% */
+    --neutral-coor: #ebf1f7;
+    --secondary-color: #95f9c3;
+    --primary-color: #0b3866;
+    --neutral-color: #0b39660c;
+  }
+
 body, html {
     scroll-snap-type:mandatory;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    background-color: #e5e5f7;
+    background-color: var(--neutral-color);
     margin: 0px;
     padding: 0px;
 }
@@ -21,7 +31,7 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #444df71f, #444df71c);
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--primary-color-faded) 10px );
 }
 
 .bg_pattern2{
@@ -32,9 +42,13 @@ body, html {
     height: max-content;
     display: flex;
     justify-content: center;
-    align-items: center;
     background: url('../public/wave.svg');
+    background-color: var(--neutral-color);
+    align-items: center;
+    
     background-repeat: no-repeat;
+    
+    
 }
 .bg_pattern3{
     scroll-snap-align: start;
@@ -45,10 +59,11 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image:  radial-gradient(#444cf7 1.05px, transparent 1.05px), radial-gradient(#444cf7 1.05px, #e5e5f7 1.05px);
+    background-image:  radial-gradient(var(--primary-color) 1.05px, transparent 1.05px), radial-gradient(var(--primary-color) 1.05px, var(--neutral-color) 1.05px);
     background-size: 42px 42px;
     background-position: 0 0,21px 21px;  
 }
+
 
 @media only screen and (max-width: 600px) {
     body, html {

@@ -10,11 +10,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-      'primary' : '#7077fd',
-      'neutral' : '#e5e5f7',
-      'secondary' : '#FDF670',
+      'primary' : '#0b3866',
+      'neutral' : '#ebf1f7',
+      'secondary' : '#95f9c3',
       'android' : "#3ddc84",
       'web' : "#1982FC",
+      'current': 'currentColor'
       },
       dropShadow : {
         'secondary': '0 35px 35px secondary',
