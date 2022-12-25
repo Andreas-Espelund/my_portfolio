@@ -16,7 +16,7 @@ export default function TypeChip({ type, size }: { type:string, size:string }) {
       break;
   }
   return (
-    <div className={`${background} w-fit text-white rounded-full shadow-lg block text-center font-semibold ${textSize}`}>
+    <div className={`${background} w-fit text-white rounded-full block text-center font-semibold ${textSize}`}>
         {type}
     </div>
   )

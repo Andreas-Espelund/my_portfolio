@@ -15,7 +15,7 @@ export default function page({params}) {
       return `rgba(${r},${g},${b},0.3)`
     }
     return '#e5e5f7'
-  }
+  } 
   
   return (
     <div className="relative w-full lg:p-4 bg-white" style={{color:project.color, backgroundColor:hexToRgb(project.color)}}>
@@ -23,41 +23,38 @@ export default function page({params}) {
           <div className="relative min-h-halfscreen w-full">
             <Image src={project.src} fill className="object-cover lg:rounded-2xl shadow-lg" alt={''}/>
             <div className="absolute top-0 left-0 hidden lg:flex  lg:translate-y-10 lg:-translate-x-12">
-              <Fab image="/arrow_left.svg" href="/" visible={undefined} position={undefined}/>
+              <Fab image="/arrow_left.svg" href="/" position={undefined} color={project.color}/>
             </div>
             <div className='absolute top-0 right-0 p-4'>
               <TypeChip type={project.type} size="large"/>
             </div>
           </div>
         
-        <div className="w-full flex flex-col gap-10 p-4 lg:p-0">
-          <Technologies small={false} items={project.tech}/>
-          <div className="flex flex-wrap gap-4 justify-between items-end ">
+        <Technologies small={false} items={project.tech} bg={false}/>
+        <div className="flex flex-col gap-4 p-4 lg:shadow-lg  mt-10 lg:rounded-2xl lg:backdrop-blur lg:bg-white/10 mb-20">
+          <div className="flex flex-col lg:flex-row gap-4 h-min justify-between lg:items-end">
             <h1 className="text-5xl lg:text-6xl font-semibold">{project.name}</h1>
-            <div className="flex gap-4">
-
+            <div className="flex gap-4 flex-wrap">
               <LargeBtn url={project.github_url} img="/github.png" textSm='Available on' textLg='GitHub' style=''/>
-
               {project.page_url?
                 <LargeBtn url={project.page_url} img='/link.svg' textSm='Visit' textLg='Page' style='secondary'/> : <></>
               }
             </div>
           </div>
+          
           <div className='h-2 rounded-full opacity-75' style={{backgroundColor: project.color}}/>
           <h2 className='text-2xl lg:text-4xl font-semibold '>What i learned</h2>
           <ul className='list-disc list-inside w-full font-semibold text-lg text-black'>
-            {project.lessons.map((t)=><li>{t}</li>)}
+            {project.lessons.map((t)=><li key={t}>{t}</li>)}
           </ul>
-          <h2 className='text-2xl lg:text-4xl font-semibold '>About</h2>
-          
-          <div className='flex flex-col gap-4 pb-14 text-lg text-black'>
-              {project.description.map((d)=> <p>{d}</p>)}
-          </div>
-        
+          <h2 className='text-2xl lg:text-4xl font-semibold '>About</h2>            
+          <div className='flex flex-col gap-4 text-lg text-black'>
+            {project.description.map((d)=> <p key={d}>{d}</p>)}
+          </div>        
         </div>
         
         <div className="fixed top-0 left-0 flex lg:hidden">
-          <Fab image="/arrow_left.svg" href="/" visible={undefined} position={undefined}/>
+          <Fab image="/arrow_left.svg" href="/" position={undefined} color={project.color}/>
         </div>
       </div>
       
