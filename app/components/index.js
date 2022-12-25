@@ -6,4 +6,5 @@ import Projects from "./Projects";
 import LargeBtn from './LargeBtn'
 import Technologies from "./Technologies";
 import TypeChip from "./TypeChip";
-export { CardView, Contact, Fab, Navbar, Projects, LargeBtn, Technologies, TypeChip}
+import Header from './Header';
+export { CardView, Contact, Fab, Navbar, Projects, LargeBtn, Technologies, TypeChip, Header}

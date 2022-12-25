@@ -20,7 +20,7 @@ export default function LargeBtn({img,url, textSm, textLg, style}) {
             img_color = 'brightness-0 invert'
     }
   return (
-    <Link href={url} target="_blank" className={`flex flex-1 lg:flex-auto items-center justify-center text-md p-4 gap-2 rounded-2xl ${color} hover:scale-105 hover:shadow-xl transition-all shadow-lg`}>
+    <Link href={url} target="_blank" className={`flex flex-1 lg:flex-auto items-center justify-center text-md p-4 gap-2 rounded-2xl ${color} hover:scale-105 hover:shadow-xl transition-all duration-500 shadow-lg`}>
         <div className='relative w-8 h-8 lg:w-14 lg:h-14'>
             <Image src={img} fill className={`object-contain  ${img_color}`} alt="github logo"/>
 
