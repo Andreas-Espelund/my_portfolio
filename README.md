@@ -1,6 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welcome to my portfolio
 
-## Getting Started
+Check out my portfolio **[here]("https://www.espelund.app/")** if you havent already
+
+## Run the project locally
 
 First, run the development server:
 
@@ -9,26 +11,41 @@ npm run dev
 # or
 yarn dev
 ```
+Then open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About the page
+<div class="container">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="42">
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<img  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="42"/>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="42">
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<img  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="42"/>
 
-## Learn More
+<img  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="42"/>
 
-To learn more about Next.js, take a look at the following resources:
+<img  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="42"/>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<img  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="42"/>
 
-## Deploy on Vercel
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="42"/>
+</div>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+###
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The page is made with react using javascript and typescript, as well as tailwindcss for styling. As my framework i used next.js version 13 with the directory based routing. Primarily for ease of developement and the seamless deployment with vercel. 
+
+
+
+
+<style>
+.container{
+    display: flex;
+    background-color: rgba(230,230,230);
+    border-radius: 0.2rem;
+    padding: 1rem;
+    justify-content: space-between;
+}
+</style>
