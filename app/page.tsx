@@ -10,6 +10,24 @@ export default function Home() {
   
   return (
     <div className="relative min-h-screen">
+      <section className='h-screen snap-start overflow-hidden relative'>
+        
+        <div className='background'>
+          <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+          <div className="h-screen grid place-content-center absolute">
+            <div className="text_wrapper">
+              <h1 className="text-[2rem] lg:text-[8.2rem] text-neutral">Welcome!</h1>
+              <h1 className="text-[1.1rem] mt-6 text-neutral">My name is Andreas Espelund and i am an aspiring developer;</h1>
+              <div className='text-[1rem] lg:text-[2.12rem] flex flex-wrap gap-2 mt-8 items-center  text-neutral'>
+                <h1>Scroll to explore my projects</h1>
+                <h1 className="cursor">_</h1>
+              </div>
+            </div>
+                
+          </div>
+        </div>
+      </section>
+      
       <section id="projects" className="bg_pattern1">
         <div className="flex flex-col w-full lg:w-fit gap-10 opacity-100 my-24 lg:mt-0">
             <Header title="Recent projects" emoji='🧑‍💻'/>

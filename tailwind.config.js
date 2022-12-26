@@ -23,6 +23,12 @@ module.exports = {
       minHeight: {
         '1/2': '50%',
         'halfscreen' : '50dvh'
+      },
+      fontSize:{
+        'huge' : '10rem'
+      },
+      fontFamily:{
+        'game' : ['Press Start 2P','sans-serif']
       }
       
     },
