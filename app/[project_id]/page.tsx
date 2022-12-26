@@ -30,7 +30,7 @@ export default function page({params}) {
             </div>
           </div>
         
-        <Technologies items={project.tech} bg={false}/>
+        <Technologies items={project.tech}/>
         <div className="flex flex-col gap-4 p-4 lg:shadow-lg  mt-10 lg:rounded-2xl lg:backdrop-blur lg:bg-white/50 mb-20">
           <div className="flex flex-col lg:flex-row gap-4 h-min justify-between lg:items-end">
             <h1 className="text-5xl lg:text-6xl font-semibold">{project.name}</h1>
