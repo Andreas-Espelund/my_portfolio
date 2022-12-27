@@ -36,7 +36,7 @@ export default function Home() {
       </section>
 
       <section id="about" className="bg_pattern2">
-        <div className="flex flex-col w-full lg:w-1/2 gap-10">
+        <div className="flex flex-col w-full lg:w-1/2 gap-10 mt-20 lg:mt-0">
           <Header title="Hello there!" emoji="👋"/>
           <p className="text-xl lg:text-2xl">
             My name is Andreas Espelund, and I am a computer science student currently pursuing a Bachelor's degree in Computer Science at UiO. I have a strong passion for technology and computer programming, and I am always looking for ways to expand my knowledge and skills in the field. In my current studies, I am focusing on learning new skills, and I am eager to apply my knowledge and expertise to real-world problems.
