@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-    
     --primary-color-faded: #0b396611; /* Primary color with pacity around 20% */
     --primary-color-faded2: #0b396638; /* Primary color with pacity around 20% */
     --neutral-coor: #ebf1f7;
@@ -21,18 +20,11 @@ body, html {
     margin: 0px;
     padding: 0px;
 }
-.bg_pattern0{
-  scroll-snap-align: start;
-  width: 100%;
-  padding: 1rem;
-  min-height: 100vh;
-  height: max-content;
-}
 
 .text_wrapper{
     filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
     padding: 1.5rem;
-    font-family: 'Press Start 2P';
+    font-family: 'courier';
 }
 .bg_pattern1{
     scroll-snap-align: start;
@@ -49,20 +41,17 @@ body, html {
 
 .bg_pattern2{
     scroll-snap-align: start;
-    width: 100%;
-    padding: 1rem;
     min-height: 100vh;
     height: max-content;
+    padding: 1rem;
     display: flex;
     justify-content: center;
-    background: url('../public/wave.svg');
-    background-color: var(--neutral-color);
     align-items: center;
-    
+    background: url('../public/wave.svg'); 
+    background-color: var(--neutral-color);
     background-repeat: no-repeat;
-    
-    
 }
+
 .bg_pattern3{
     scroll-snap-align: start;
     width: 100%;

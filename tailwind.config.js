@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
@@ -26,11 +27,7 @@ module.exports = {
       },
       fontSize:{
         'huge' : '10rem'
-      },
-      fontFamily:{
-        'game' : ['Press Start 2P','sans-serif']
-      }
-      
+      },  
     },
     
     

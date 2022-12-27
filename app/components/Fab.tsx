@@ -10,10 +10,9 @@ export default function Fab({position, image, href, color}) {
     }
     console.log(color)
   return (
-    <Link legacyBehavior href={href}>
-        <a className={`m-4 p-4 bg-secondary  rounded-full w-fit drop-shadow-xl hover:drop-shadow-2xl hover:-translate-y-1 transition-all`}>
-            <Image src={image} width="32" height="32" alt="arrow icon"/>
-        </a>
-    </Link>
+      <a href={href} className={`m-4 p-4 bg-secondary  rounded-full w-fit drop-shadow-xl hover:drop-shadow-2xl hover:-translate-y-1 transition-all`}>
+          <Image src={image} width="32" height="32" alt="arrow icon"/>
+      </a>
+    
   )
 }

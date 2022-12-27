@@ -23,7 +23,7 @@ export default function page({params}) {
           <div className="relative min-h-halfscreen w-full">
             <Image src={project.src} fill className="object-cover lg:rounded-2xl shadow-lg" alt={''}/>
             <div className="absolute top-0 left-0 hidden lg:flex  lg:translate-y-10 lg:-translate-x-12">
-              <Fab image="/arrow_left.svg" href="/" position={undefined} color={project.color}/>
+              <Fab image="/arrow_left.svg" href="/#projects" position={undefined} color={project.color}/>
             </div>
             <div className='absolute top-0 right-0 p-4'>
               <TypeChip type={project.type} size="large"/>
