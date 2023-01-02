@@ -16,9 +16,14 @@ export default function Home() {
           <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
           <div className="h-screen grid place-content-center absolute">
             <div className="text_wrapper">
-              <h1 className="text-[2rem] lg:text-[8.2rem] text-neutral">Welcome!</h1>
-              <h1 className="text-[1.1rem] mt-6 text-neutral">My name is Andreas Espelund and i am an aspiring developer;</h1>
-              <div className='text-[1rem] lg:text-[2.12rem] flex flex-wrap gap-2 mt-8 items-center  text-neutral'>
+              <h1 className="text-[2rem] lg:text-[5rem]">Welcome!</h1>
+              <div className="flex justify-start items-center text-6xl">
+                <h1 className="mr-4">I'm </h1>
+                <a className="text-secondary hover:text-[3rem] hover:pb-4 duration-500 " href="https://github.com/Andreas-Espelund" target='_blank'>Andreas Espelund</a>
+                <h1 className="">,</h1>
+              </div>
+              <h1 className="">an aspiring developer;</h1>
+              <div className='text-[1rem] lg:text-[2.12rem] flex flex-wrap gap-2 mt-8 items-center '>
                 <h1>Scroll to explore my projects</h1>
                 <h1 className="cursor">_</h1>
               </div>
@@ -50,7 +55,7 @@ export default function Home() {
       <section id="contact" className="bg_pattern3">
       <div className="flex flex-col w-full gap-10 lg:w-fit">
         <Header title="Get in touch" emoji="🚀"/>
-        <div className="w-full bg-primary lg:w-fit p-10 m-auto rounded-2xl shadow-lg">
+        <div className="w-full bg-primary lg:w-fit p-10 m-auto rounded-lg shadow-lg">
           <div className='flex flex-col lg:flex-row gap-10 lg:gap-20  w-fit m-auto'>
             {socials.map((e) => <Contact key={e.id} contact={e}/>)}
           </div>
