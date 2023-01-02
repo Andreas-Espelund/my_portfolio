@@ -1,8 +1,6 @@
 'use client'
 import './globals.css'
 import { Contact, Projects, Navbar, Fab, Header } from './components'
-import { useEffect } from 'react'
-import Image from 'next/image'
 import get_socials from '../pages/api/contacts'
 export default function Home() {
  
@@ -14,16 +12,16 @@ export default function Home() {
         
         <div className='background'>
           <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-          <div className="h-screen grid place-content-center absolute">
-            <div className="text_wrapper">
-              <h1 className="text-[2rem] lg:text-[5rem]">Welcome!</h1>
-              <div className="flex justify-start items-center text-6xl">
+          <div className="h-screen flex items-center justify-center lg:justify-start absolute w-full">
+            <div className="font-tinos text-neutral text-center lg:text-start  p-10 text-4xl  lg:text-6xl flex-col gap-4 drop-shadow-lg">
+              <h1 className="text-7xl lg:text-[8rem]">Welcome!</h1>
+              <div className="flex justify-start items-center">
                 <h1 className="mr-4">I'm </h1>
-                <a className="text-secondary hover:text-[3rem] hover:pb-4 duration-500 " href="https://github.com/Andreas-Espelund" target='_blank'>Andreas Espelund</a>
+                <a className="text-secondary lg:hover:text-7xl lg:hover:pb-4 duration-500 " href="https://github.com/Andreas-Espelund" target='_blank'>Andreas Espelund</a>
                 <h1 className="">,</h1>
               </div>
-              <h1 className="">an aspiring developer;</h1>
-              <div className='text-[1rem] lg:text-[2.12rem] flex flex-wrap gap-2 mt-8 items-center '>
+              <h1>an aspiring developer;</h1>
+              <div className='text-2xl flex flex-wrap gap-2 mt-8 items-center'>
                 <h1>Scroll to explore my projects</h1>
                 <h1 className="cursor">_</h1>
               </div>
@@ -62,9 +60,7 @@ export default function Home() {
         </div>
       </div>
       </section>
-      <div className='lg:hidden'>
         <Navbar id="mobile_navbar"/>
-      </div>
     </div>
   )
 }

@@ -28,6 +28,9 @@ module.exports = {
       fontSize:{
         'huge' : '10rem'
       },  
+      fontFamily: {
+        'tinos' : ['Tinos','serif']
+      }
     },
     
     

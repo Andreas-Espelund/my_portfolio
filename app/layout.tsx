@@ -7,9 +7,6 @@ export default function RootLayout({ children }) {
       <head/>  
       <body id="body" className="min-h-screen w-full flex flex-col justify-start bg-neutral ">
         {children}
-        <div className='hidden lg:flex'>
-          <Navbar id="navbar1"/>
-        </div>
       </body>
     </html>
   )
