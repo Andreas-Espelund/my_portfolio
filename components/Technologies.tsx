@@ -1,5 +1,5 @@
 import React from 'react'
-import { getIcon } from '../../pages/api/devIcons'
+import { getIcon } from '../pages/api/devIcons'
 import Image from 'next/image'
 export default function Technologies({items}) {
 

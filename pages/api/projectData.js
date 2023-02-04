@@ -21,15 +21,15 @@ const projects = [
         lessons: ['Android developement', 'Jetpack compose', 'Using design patterns', 'Unit & integration-testing']
     },
     {
-        id : "todo_list",
-        name: "Todo list",
+        id : "invoice",
+        name: "Cash in",
         description: [
-            "This project was primarily about learning firebase to make more advanced web apps with persistent storage. I also used firebase for authentication, such that users can create an account and log in anywhere. I used firestore as the database wich was a more simple way of posting and fetching data to and from the database. In this project i also tried tailwind for the first time wich made the process of building the UI much faster. To build and deploy the page i used next.js and vercels hosting platform."
+            "I needed to send an invoice, but didnt like any of the free invoicing services i could find online, so i decided to make my own."
         ],
-        oneliner : 'Remember?',
-        src: "/todos.png",
+        oneliner : 'Ca ching',
+        src: "/cashin.png",
         type : 'web',
-        color: '#4E80EE',
+        color: '#377AA4',
         alt : "project screenshot",
         github_url : 'https://github.com/Andreas-Espelund/todo-list',
         page_url : 'https://todo-list-psi-lac.vercel.app/',
@@ -44,7 +44,7 @@ const projects = [
             "I learned more about react and react-hooks as well as navigation using Next.js. I also switched to Typescript for this procjet to expand my arsenal of programming languages. This is the first time i have made a form or handeled any user input on a webpage, wich was very useful. I also used tailwind to style the page, wich i'm liking more and more."
         ],
         oneliner : 'Landing page for a band',
-        src: "/jackbow.jpeg",
+        src: "/jackbow.jpg",
         type : 'web',
         color: '#18181B',
         alt : "project screenshot",
@@ -54,29 +54,27 @@ const projects = [
         lessons: ['Page navigation', 'Making forms', 'Styling with tailwind CSS', 'Next.js']
     },
     {
-        id : "munchees",
-        name: "Munchees",
+        id : "skaara",
+        name: "Skaara living",
         description: [
             "Munchees was made in a couple of hours as a 'test'-project for making a simple web app. It's my first proper working web-app built with react and javascript. It was also the first website i made with API fetching.",
             "I learned how to make, build and deploy a site made with react. I also improved my css skills and made the site responsive."
         ],
-        oneliner : 'Random meal generator',
-        src: "/munchees.png",
+        oneliner : 'Cabin rental webpage',
+        src: "/skaara.jpg",
         type : 'web',
-        color: '#ED6D52',
+        color: '#EF9068',
         alt : "project screenshot",
         github_url : 'https://github.com/Andreas-Espelund/munchees',
-        page_url : 'https://munchees.vercel.app/',
+        page_url : 'https://skaara-living.vercel.app/',
         tech : ['React','Javascript', 'Css', 'Node','Html', 'Webstorm'],
         lessons: ['Fetching from API in javascript', 'Simple styling with css', 'Publishing a webpage']
     },
     
 ]
 
-export function getProjectById(id){
+function getProjectById(id){
     return projects.find(x => x.id === id)
 }
 
-export function getAllProjects(){
-    return projects
-}
+export { projects, getProjectById}
